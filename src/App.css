@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, violet, blue);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.to-do-list-title {
+  color: black;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+#input-box {
+  width: 350px;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+.add-button {
+  margin-left: 40px;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: blueviolet;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.task {
+  color: black;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.checkbox::before {
+  content: "";
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: gray; /* เปลี่ยนสีข้อความเป็นสีเทา */
+}
+
+input[type="checkbox"] {
+  color: blueviolet;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  width: 50px;
+  justify-content: end;
+}
+
+.delete {
+  width: 10px;
+  height: 10px;
+}
